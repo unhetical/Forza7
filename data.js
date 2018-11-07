@@ -1,7 +1,7 @@
  var app = new Vue({
      el: "#app",
      data: {
-         weathers: [],
+         league: [],
          text: "",
          notFound: false,
          info: false,
