@@ -1,0 +1,152 @@
+{
+    "league": [
+        {
+            "teams": [
+                {
+                    "id": "t1",
+                    "name": "Virtualdrivers by TX3",
+                    "car": "Porsche",
+
+                    "players": [{
+                            "name": "TX3 Bilysoo",
+                            "age": 20,
+                            "gender": "M",
+                            "country": "Usa",
+                            "total_points": 8808,
+                            "photo": "https://forzarc.com/assets/images/racers/tx3billysoo.png",
+                    },
+                        {
+                            "name": "TX3 MisterJack",
+                            "age": 22,
+                            "gender": "M",
+                            "country": "France",
+                            "total_points": 8459,
+                            "photo": "https://forzarc.com/assets/images/racers/tx3misterjack.png",
+                    }]
+
+               },
+                {
+                    "id": "t2",
+                    "name": "JapSpeed Racing",
+                    "car": "Ferrari",
+
+                    "players": [{
+                            "name": "JSR Rossi",
+                            "age": 24,
+                            "gender": "M",
+                            "country": "Uk",
+                            "total_points": 9944,
+                            "photo": "https://forzarc.com/assets/images/racers/jsrrossi.png",
+                    },
+                        {
+                            "name": "Giovanni",
+                            "age": 18,
+                            "gender": "M",
+                            "country": "Italy",
+                            "total_points": 8872,
+                            "photo": "https://forzarc.com/assets/images/racers/jsrcommando.png",
+                    }]
+                },
+                {
+                    "id": "t3",
+                    "name": "Total Performance Racing",
+                    "car": "Ferrari",
+
+                    "players": [{
+                            "name": "TPR ChemicaL",
+                            "age": 16,
+                            "gender": "M",
+                            "country": "Italy",
+                            "total_points": 9276,
+                            "photo": "https://forzarc.com/assets/images/racers/tprchemical.png",
+                    },
+                        {
+                            "name": "Daveyskills",
+                            "age": 21,
+                            "gender": "M",
+                            "country": "UK",
+                            "total_points": 9063,
+                            "photo": "https://forzarc.com/assets/images/racers/daveyskills.png",
+                    }]
+                },
+                {
+                    "id": "t4",
+                    "name": "F4H Motorsport",
+                    "car": "Ferrari",
+
+                    "players": [{
+                            "name": "F4H Deano",
+                            "age": 27,
+                            "gender": "M",
+                            "country": "UK",
+                            "total_points": 8952,
+                            "photo": "https://forzarc.com/assets/images/racers/f4hdeano.png",
+                    },
+                        {
+                            "name": "FH4 Venom",
+                            "age": 17,
+                            "gender": "M",
+                            "country": "Usa",
+                            "total_points": 10289,
+                            "photo": "https://forzarc.com/assets/images/racers/f4hvenom.png",
+                    }]
+                },
+                {
+                    "id": "t5",
+                    "name": "Fast Racers Forza",
+                    "car": "Ferrari",
+
+                    "players": [{
+                            "name": "FRF Handicap",
+                            "age": 17,
+                            "gender": "M",
+                            "country": "Usa",
+                            "total_points": 8795,
+                            "photo": "https://forzarc.com/assets/images/racers/frfhandicap.png",
+                    },
+                        {
+                            "name": "FRF Tesla",
+                            "age": 18,
+                            "gender": "M",
+                            "country": "Usa",
+                            "total_points": 8348,
+                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png",
+                    }]
+                },
+                {
+                    "id": "t6",
+                    "name": "Team Highlands Racing",
+                    "car": "Ferrari",
+
+                    "players": [{
+                            "name": "THR VANQUISH",
+                            "age": 16,
+                            "gender": "M",
+                            "country": "France",
+                            "total_points": 9150,
+                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png",
+                    },
+                        {
+                            "name": "THR Flex",
+                            "age": 19,
+                            "gender": "M",
+                            "country": "Australia",
+                            "total_points": 8097,
+                            "photo": "https://forzarc.com/assets/images/racers/thrflex.png",
+                    }]
+                },
+                ],
+            "tracks": [
+                {
+                    "id": "track1",
+                    "name": "Montmeló Circuit",
+                },
+                {
+                    "id": "track2",
+                    "name": "Le Mans",
+                },
+                 ],
+            "dates":[],
+        }
+    ]
+}
