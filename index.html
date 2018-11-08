@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
@@ -18,59 +18,72 @@
 
 <body>
     <div id="app">
-        <header>
-            <h1 class="titleh1">Forza Racing Championship </h1>
+        <header class="header-index">
+
         </header>
 
         <nav class="nav">
+
             <div class="teams">
-                <a class="nav-link" href="teams.html">TEAMS</a>
+                <a class="nav-link" href="teams.html">
+                    <h2>TEAMS</h2>
+                </a>
+
             </div>
 
             <div class="dates">
-                <a class="nav-link" href="#">DATES</a>
+                <a class="nav-link" href="dates.html">
+                    <h2>DATES</h2>
+                </a>
             </div>
 
             <div class="ranking">
-                <a class="nav-link" href="#">RANKING</a>
+                <a class="nav-link" href="ranking.html">
+                    <h2>RANKING</h2>
+                </a>
             </div>
 
             <div class="tracks">
-                <a class="nav-link" href="#">TRACKS</a>
+                <a class="nav-link" href="tracks.html">
+                    <h2>TRACKS</h2>
+                </a>
             </div>
         </nav>
 
-        <div class="footer fixed-bottom">
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-                <!-- Brand -->
-                <a class="navbar-brand" href="#">MENU</a>
+        <div class="footer container-fluid">
+            <div class="footer fixed-bottom">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="index.html">HOME</a>
 
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Toggler/collapsibe Button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TEAMS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">DATES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">RANKING</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">TRACKS</a>
-                        </li>
-                    </ul>
+                    <!-- Navbar links -->
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="teams.html">TEAMS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dates.html">DATES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="ranking.html">RANKING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tracks.html">TRACKS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="chat">
+                    <a class="nav-link" href="#">CHAT</a>
                 </div>
-            </nav>
-
-            <div class="chat">
-                <a class="nav-link" href="#">CHAT</a>
             </div>
         </div>
     </div>
