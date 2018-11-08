@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -17,25 +18,78 @@
 <!------------HEADER------------->
 
 <body class="container-fluid">
-   
+
     <header class="header-all">
         <h1>TRACKS</h1>
     </header>
     <div id="app">
 
         <div class="logoTracks container-fluid">
+            <div id="accordion">
 
-            <div class="track">
-                <img class="trackmap" src="https://peterauto.peter.fr/wp-content/uploads/circuit-catalunya-access-map.jpg" alt="bcn"></div>
-                
-                 <div class="track">
-                <img class="trackmap" src="https://dandolealkers.files.wordpress.com/2016/03/eybis_circuit_bugatti_big.jpg?w=1000" alt="lemans"></div>
-                
-                 <div class="track">
-                <img class="trackmap" src="http://www.carthrottle.com/wp-content/uploads/2013/08/monza-circuit_000.jpg" alt="monza"></div>
-                
-                 <div class="track">
-                <img class="trackmap" src="http://www.atlasf1.com/2000/eur/preview/eurlap.jpg" alt="nurburgring"></div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <h4>Barcelona Circuit</h4>
+                            <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="track">
+                                <img class="trackmap" src="https://peterauto.peter.fr/wp-content/uploads/circuit-catalunya-access-map.jpg" alt="bcn"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <h4>Le Mans</h4>
+                            <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="track">
+                                <img class="trackmap" src="https://dandolealkers.files.wordpress.com/2016/03/eybis_circuit_bugatti_big.jpg?w=1000" alt="lemans"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <h4>Monza Circuit</h4>
+                            <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="track">
+                                <img class="trackmap" src="http://www.carthrottle.com/wp-content/uploads/2013/08/monza-circuit_000.jpg" alt="monza"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <h4>Nurburgring GP</h4>
+                            <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="track">
+                                <img class="trackmap" src="http://www.atlasf1.com/2000/eur/preview/eurlap.jpg" alt="nurburgring"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </div>
 
         <div class="footer">

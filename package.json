@@ -1,0 +1,23 @@
+{
+  "name": "Forza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unhetical/Forza7.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unhetical/Forza7/issues"
+  },
+  "homepage": "https://github.com/unhetical/Forza7#readme",
+  "dependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
