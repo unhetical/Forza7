@@ -17,13 +17,79 @@
 
 <!------------HEADER------------->
 
-<body class="container-fluid">
+<body>
+
     <header class="header-all">
-        <h1>MATCH DAY</h1>
+        <h1>RACE DAY</h1>
     </header>
+
     <div id="app">
 
-       
+        <h1>Live</h1>
+
+        <div class="card">
+            <iframe allowfullscreen="true" src="https://mixer.com/embed/player/ForzaRC?vod=61730337" width="360" height="240"></iframe>
+        </div>
+
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Chat</h4>
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                        <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+
+                        <div>
+                            <iframe allowfullscreen="true" src="https://mixer.com/embed/chat/ForzaRC" width="320" height="240"> </iframe></div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Players</h4>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="logoTracks">
+                            <div class="table1">
+                                <table class="opac table table-bordered table-sm">
+                                    <thead>
+                                        <th>POS
+                                        </th>
+                                        <th>GAMERTAG</th>
+                                        <th>TEAM</th>
+                                        <th>COUNTRY</th>
+                                        <th>TOTAL POINTS</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                1
+                                            </td>
+                                            <td>G2 Laige</td>
+                                            <td>G2</td>
+                                            <td>Usa</td>
+                                            <td>10550</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <div class="footer">
             <div class="footer fixed-bottom">
@@ -47,7 +113,7 @@
                                 <a class="nav-link" href="dates.html">DATES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="leaderboards.html">LEADERBOARDS</a>
+                                <a class="nav-link" href="ranking.html">RANKING</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="tracks.html">TRACKS</a>
@@ -57,7 +123,7 @@
                 </nav>
 
                 <div class="chat">
-                    <a class="nav-link" href="chat">CHAT</a>
+                    <a class="nav-link" href="#">CHAT</a>
                 </div>
             </div>
         </div>

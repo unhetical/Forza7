@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/unhetical/Forza7/issues"
   },
-  "homepage": "https://github.com/unhetical/Forza7#readme",
+  "homepage": "https://github.com/unhetical/Forza7.git",
   "dependencies": {
     "lite-server": "^2.4.0"
   }
