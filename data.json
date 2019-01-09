@@ -5,31 +5,36 @@
                 {
                     "id": "t1",
                     "name": "Virtualdrivers by TX3",
+                    "info": "En 2006 se lanzó el TEAM TX3 en xbox360.En 2008 fuimos los primeros en crear en Francia, una ley de asociación 1901 de un equipo llamado 100% Racing.En 2018, somos el primer equipo en asociarnos con el Equipo LDLC para profesionalizar a nuestros pilotos.",
                     "car": "Porsche",
-
+                    "logoCar": "https://msmproduction.s3-eu-west-1.amazonaws.com/s3fs-public/content/WEC/2017/POrsche/919.jpg",
+                    "logo": "https://virtualdrivers.org/wp-content/uploads/2018/02/830585logoVD.png",
                     "players": [{
+                            "photo": "https://forzarc.com/assets/images/racers/tx3billysoo.png",
                             "name": "TX3 Bilysoo",
                             "age": 20,
                             "gender": "M",
                             "country": "Usa",
                             "total_points": 8808,
-                            "photo": "https://forzarc.com/assets/images/racers/tx3billysoo.png",
+                            "team": "Virtualdrivers by TX3"
                     },
                         {
+                            "photo": "https://forzarc.com/assets/images/racers/tx3misterjack.png",
                             "name": "TX3 MisterJack",
                             "age": 22,
                             "gender": "M",
                             "country": "France",
                             "total_points": 8459,
-                            "photo": "https://forzarc.com/assets/images/racers/tx3misterjack.png",
-                    }]
-
+                            "team": "Virtualdrivers by TX3"
+                           }]
                },
                 {
                     "id": "t2",
                     "name": "JapSpeed Racing",
                     "car": "Ferrari",
-
+                    "info": "JSR is an elite Forza Motorsport team that started in 2015. Led by Rayzer, Craviator and NiSMO",
+                    "logoCar": "https://scontent.fmad3-6.fna.fbcdn.net/v/t31.0-8/24173949_2119684871599994_8372860259987196980_o.jpg?_nc_cat=111&_nc_ht=scontent.fmad3-6.fna&oh=4a12c6270cdcf1f19742e0b3142f2aa1&oe=5C760689",
+                    "logo": "https://cdn.eslgaming.com/play/eslgfx/gfx/logos/teams/10831000/10831681_medium.jpg",
                     "players": [{
                             "name": "JSR Rossi",
                             "age": 24,
@@ -37,28 +42,33 @@
                             "country": "Uk",
                             "total_points": 9944,
                             "photo": "https://forzarc.com/assets/images/racers/jsrrossi.png",
+                            "team": "JapSpeed Racing"
                     },
                         {
-                            "name": "Giovanni",
+                            "name": "JSR Commando",
                             "age": 18,
                             "gender": "M",
                             "country": "Italy",
                             "total_points": 8872,
                             "photo": "https://forzarc.com/assets/images/racers/jsrcommando.png",
+                            "team": "JapSpeed Racing"
                     }]
                 },
                 {
                     "id": "t3",
                     "name": "Total Performance Racing",
-                    "car": "Ferrari",
-
+                    "car": "Porsche",
+                    "info": "Total Performance Racing fue uno de los primeros equipos de deportes en competir en la franquicia de Forza Motorsport. Establecido en 2008, alrededor de 8-10 meses después del lanzamiento de Forza Motorsport 2, este era un equipo que jugaba con Forza competitivamente casi una década antes de la encarnación del Campeonato de carreras de Forza: la primera serie de carreras de deportes de Microsoft que comenzó en 2016 en Forza Motorsport 6.",
+                    "logoCar": "https://uploads-ssl.webflow.com/59e62edd85839000015989c7/5b4a915a596782d850fa343a_D19B20DE4A73C9E96D139BFEE266EF65.jpg",
+                    "logo": "https://cdn.shopify.com/s/files/1/1138/8196/files/TPR_morse_large.png?12428677125148864174",
                     "players": [{
                             "name": "TPR ChemicaL",
                             "age": 16,
                             "gender": "M",
                             "country": "Italy",
                             "total_points": 9276,
-                            "photo": "https://forzarc.com/assets/images/racers/tprchemical.png",
+                            "team": "Total Performance Racing",
+                            "photo": "https://forzarc.com/assets/images/racers/tprchemical.png"
                     },
                         {
                             "name": "Daveyskills",
@@ -66,21 +76,25 @@
                             "gender": "M",
                             "country": "UK",
                             "total_points": 9063,
-                            "photo": "https://forzarc.com/assets/images/racers/daveyskills.png",
+                            "team": "Total Performance Racing",
+                            "photo": "https://forzarc.com/assets/images/racers/daveyskills.png"
                     }]
                 },
                 {
                     "id": "t4",
                     "name": "F4H Motorsport",
-                    "car": "Ferrari",
-
+                    "car": "Audi",
+                    "info": "F4H es reconocido por el estudio de juegos propiedad de Microsoft Turn 10 como el equipo de carreras más antiguo y exitoso de su propia franquicia Forza Motorsport. Como tal, F4H Motorsport es el pináculo de los clubes de carreras en línea en toda la plataforma Xbox, con una lista de talentos multinacionales. del pedigrí más alto que compite en todo tipo de grandes eventos de carreras de varios formatos que nos permiten desafiar a los equipos y pilotos más talentosos del mundo.",
+                    "logoCar": "http://www.f4hmotorsport.co.uk/images/f4h%20audi.jpg",
+                    "logo": "https://pbs.twimg.com/profile_images/851966560327651328/VY6pwm_G_400x400.jpg",
                     "players": [{
                             "name": "F4H Deano",
                             "age": 27,
                             "gender": "M",
                             "country": "UK",
                             "total_points": 8952,
-                            "photo": "https://forzarc.com/assets/images/racers/f4hdeano.png",
+                            "team": "F4H Motorsport",
+                            "photo": "https://forzarc.com/assets/images/racers/f4hdeano.png"
                     },
                         {
                             "name": "FH4 Venom",
@@ -88,21 +102,25 @@
                             "gender": "M",
                             "country": "Usa",
                             "total_points": 10289,
-                            "photo": "https://forzarc.com/assets/images/racers/f4hvenom.png",
-                    }]
+                            "team": "F4H Motorsport",
+                            "photo": "https://forzarc.com/assets/images/racers/f4hvenom.png"
+                                }]
                 },
                 {
                     "id": "t5",
                     "name": "Fast Racers Forza",
                     "car": "Ferrari",
-
+                    "info": "Somos un equipo de pilotos virtuales, Brasileños y extranjeros, que juega Forza Motorsports y Projectcars.",
+                    "logoCar": "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-9/44269444_2050909514967631_1726517032687501312_n.jpg?_nc_cat=103&_nc_ht=scontent-mad1-1.xx&oh=9f364a4651c14f1505746cc1c2f122da&oe=5C82A565",
+                    "logo": "https://pbs.twimg.com/media/DkvNcCyW4AAJMe-.jpg",
                     "players": [{
                             "name": "FRF Handicap",
                             "age": 17,
                             "gender": "M",
                             "country": "Usa",
                             "total_points": 8795,
-                            "photo": "https://forzarc.com/assets/images/racers/frfhandicap.png",
+                            "team": "Fast Racers Forza",
+                            "photo": "https://forzarc.com/assets/images/racers/frfhandicap.png"
                     },
                         {
                             "name": "FRF Tesla",
@@ -110,21 +128,25 @@
                             "gender": "M",
                             "country": "Usa",
                             "total_points": 8348,
-                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png",
-                    }]
+                            "team": "Fast Racers Forza",
+                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png"
+                                }]
                 },
                 {
                     "id": "t6",
                     "name": "Team Highlands Racing",
                     "car": "Ferrari",
-
+                    "info": "Team Highlands Racing se fundó en 2016 a partir de Forza Motorsport 6. Team Highlands Racing ha crecido rápidamente hasta convertirse en uno de los mejores equipos de ForzaRC y Project CARS. Team Highlands Racing está basado en el pensamiento y la innovación de mente abierta. Tener miembros dedicados con ideas afines es la clave de nuestro éxito.",
+                    "logoCar": "https://i.ytimg.com/vi/wEK7W8kQxGY/maxresdefault.jpg",
+                    "logo": "https://pbs.twimg.com/profile_images/1026371501853790208/YP1YDsbG_400x400.jpg",
                     "players": [{
                             "name": "THR VANQUISH",
                             "age": 16,
                             "gender": "M",
                             "country": "France",
                             "total_points": 9150,
-                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png",
+                            "team": "Team Highlands Racing",
+                            "photo": "https://forzarc.com/assets/images/racers/no_photo.png"
                     },
                         {
                             "name": "THR Flex",
@@ -132,21 +154,72 @@
                             "gender": "M",
                             "country": "Australia",
                             "total_points": 8097,
-                            "photo": "https://forzarc.com/assets/images/racers/thrflex.png",
-                    }]
-                },
-                ],
-            "tracks": [
-                {
+                            "team": "Team Highlands Racing",
+                            "photo": "https://forzarc.com/assets/images/racers/thrflex.png"
+                                }]
+                }],
+            "tracks": [{
                     "id": "track1",
-                    "name": "Montmeló Circuit",
-                },
+                    "name": "Barcelona-Cataluña",
+                    "image": "https://peterauto.peter.fr/wp-content/uploads/circuit-catalunya-access-map.jpg",
+                    "location": "Ubicación Montmeló-Granollers, Cataluña,España.",
+                    "size": "Longitud 4,655 2km",
+                    "curvas": "Curvas 16",
+                    "record": "Vuelta récord 1: 14.637(Fórmula 1)",
+                    "fecha": "Inauguración 10 de septiembre de 1991"
+            },
                 {
                     "id": "track2",
-                    "name": "Le Mans",
+                    "name": "Circuit de la Sarthe",
+                    "image": "https://dandolealkers.files.wordpress.com/2016/03/eybis_circuit_bugatti_big.jpg?w=1000",
+                    "location": "Ubicación Le Mans,Francia",
+                    "events": "Eventos 24 Horas de Le Mans",
+                    "size": "Longitud 13,629 km",
+                    "curvas": "Curvas 38",
+                    "record": "Vuelta récord 3:14.791(WEC LMP1)"
+                       },
+                {
+                    "id": "track3",
+                    "name": "A.Nazionale di Monza",
+                    "image": "http://www.carthrottle.com/wp-content/uploads/2013/08/monza-circuit_000.jpg",
+                    "location": "Ubicación Monza,Italia",
+                    "size": "Longitud 5.793 km",
+                    "curvas": "Curvas 11",
+                    "record": "Vuelta récord 1:19.119 (Fórmula 1)",
+                    "fecha": "Inauguración 3 de septiembre de 1922"
+                       },
+                {
+                    "id": "track4",
+                    "name": "Nürburgring GP",
+                    "image": "http://www.atlasf1.com/2000/eur/preview/eurlap.jpg",
+                    "location": "Ubicación Nürburg,Alemania",
+                    "size": "Longitud 20.800 (Sección norte, Nordschleife) - 5.148 (Trazado de GP) km",
+                    "curvas": "Curvas 73 (Sección norte, Nordschleife) - 15 (Trazado de GP)",
+                    "record": "Vuelta récord 1:27.961 (Fórmula 1)"
+                       }],
+            "dates": [{
+                    "weekend": "Weekend 1",
+                    "name": "Barcelona Cataluña",
+                    "days": "Friday9, Saturday10, Sunday11",
+                    "data": "9/12/2018"
+            },
+                {
+                    "weekend": "Weekend 2",
+                    "name": "Circuit de la Sarthe",
+                    "days": "Friday21, Saturday22, Sunday23",
+                    "data": "21/12/2018"
                 },
-                 ],
-            "dates":[],
-        }
-    ]
+                {
+                    "weekend": "Weekend 3",
+                    "name": "A.Nazionale di Monza",
+                    "days": "Friday28, Saturday29, Sunday30",
+                    "data": "28/12/2018"
+                      },
+                {
+                    "weekend": "Weekend 4",
+                    "name": "Nürburgring GP",
+                    "days": "Friday11, Saturday12, Sunday13",
+                    "data": "11/01/2019"
+                      }]
+        }]
 }

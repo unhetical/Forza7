@@ -4,88 +4,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="128x128" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
+    <link rel="apple-touch-icon" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
+    <link rel="shortcut icon" sizes="196x196" href="Styles/Img/c5d43f73-fa7e-4e7c-840f-cde16c52f3bd.png">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <title>Forza R.C</title>
 </head>
 
-<!------------HEADER------------->
-
 <body>
-    <div id="app">
-        <header class="header-index">
+    <!-------------HTML PAGES------------->
+    <div id="app" v-if="loading">
+        <div id="main" v-show="web == 'main'">
+            <div>
+                <header class="header-index">
+                </header>
+                <nav class="nav">
+                    <a class=" teams nav-link" href="#teams" v-on:click="showPage('teams')">
+                        <h2>TEAMS</h2>
+                    </a>
+                    <a class="dates nav-link" href="#dates" v-on:click="showPage('dates')">
+                        <h2>DATES</h2>
+                    </a>
+                    <a class="ranking-index nav-link" href="#ranking" v-on:click="showPage('ranking')">
+                        <h2>RANKING</h2>
+                    </a>
+                    <a class="tracks nav-link" href="#tracks" v-on:click="showPage('tracks')">
+                        <h2>TRACKS</h2>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <div id="dates" v-show=" web == 'dates'">
+            <header class="header-all">
+                <h1>DATES</h1>
+            </header>
+            <a class="btnBack" href="#main" v-on:click="showPage('main')">Back</a>
+            <div>
+                <div class="card-dates container-fluid" v-for="value in datesC">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            {{value.weekend}}
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title opac">{{value.name}}</h5>
+                            <p class="card-text opac">{{value.days}}</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#match" v-on:click="showPage('match')" class="btn btn-primary">View Race</a>
+                            {{value.data}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="match" v-show="web == 'match'">
+            <header class="header-all">
+                <h1>RACE DAY</h1>
+            </header>
+            <a class="btnBack" href="#dates" v-on:click="showPage('dates')">Back</a>
+            <div>
+                <div class="live">
+                    <img src="http://www.clker.com/cliparts/R/L/7/P/z/j/boton-rojo-hi.png" alt="dot" width="20" height="20">
+                    <p>LIVE</p>
+                </div>
+                <div class="card">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BqiRTG0FIG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Chat</h4>
+                            <a class="card-link" data-toggle="collapse" href="#collapseO">
+                                <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                            </a>
+                        </div>
+                        <div id="collapseO" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div>
 
-        </header>
+                                    <div class="chat">
+                                        <div id="posts2" class="box table-responsive">
+                                            Loading posts...
+                                        </div>
 
-        <nav class="nav">
+                                        <div class="inputs">
+                                            <input id="textInput2" class="input" type="text" placeholder="Your message...">
+                                            <button id="create-post2" class="btn btn-info" v-on:click="writeNewPost">Send</button>
+                                        </div>
+                                    </div>
 
-            <a class=" teams nav-link" href="teams.html">
-                <h2>TEAMS</h2>
-            </a>
-            <a class="dates nav-link" href="dates.html">
-                <h2>DATES</h2>
-            </a>
-            <a class="ranking-index nav-link" href="ranking.html">
-                <h2>RANKING</h2>
-            </a>
-            <a class="tracks nav-link" href="tracks.html">
-                <h2>TRACKS</h2>
-            </a>
 
-        </nav>
 
-        <div class="footer container-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Players</h4>
+                            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="logoTracks">
+                                    <div class="ranking">
+                                        <table class="table table-sm opac">
+                                            <thead>
+                                                <th>POS
+                                                </th>
+                                                <th>GAMERTAG</th>
+                                                <th>TEAM</th>
+                                                <th>COUNTRY</th>
+                                                <th>TOTAL POINTS</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr v-for="(value, index) in playersC">
+                                                    <td>{{index+1}}</td>
+                                                    <td>{{value.name}}</td>
+                                                    <td>{{value.team}}</td>
+                                                    <td>{{value.country}}</td>
+                                                    <td>{{value.total_points}}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ranking" v-show="web == 'ranking'">
+            <header class="header-all">
+                <h1>RANKING</h1>
+            </header>
+            <a class="btnBack" href="#main" v-on:click="showPage('main')">Back</a>
+            <div class="ranking">
+                <table class="table table-sm">
+                    <thead>
+                        <th>POS
+                        </th>
+                        <th>GAMERTAG</th>
+                        <th>TEAM</th>
+                        <th>COUNTRY</th>
+                        <th>TOTAL POINTS</th>
+                    </thead>
+                    <tbody>
+                        <tr v-for="(value, index) in playersC">
+                            <td>{{index+1}}</td>
+                            <td>{{value.name}}</td>
+                            <td>{{value.team}}</td>
+                            <td>{{value.country}}</td>
+                            <td>{{value.total_points}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="team" v-show="web == 'team'">
+            <header class="header-team">
+                <img class="logoheader" :src="equipoC.logo">
+            </header>
+            <a class="btnBack" href="#teams" v-on:click="showPage('teams')">Back</a>
+
+            <div>
+                <div class="logoTracks container-fluid">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>PLAYERS</h4>
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="card-content" v-for="value in equipoC.players">
+                                        <h4>{{value.name}}</h4>
+                                        <div class="track">
+                                            <img class="trackmap" :src="value.photo"></div>
+                                        <ul class="opac">
+                                            <li>AGE: {{value.age}}</li>
+                                            <li>GENDER: {{value.gender}}</li>
+                                            <li>COUNTRY: {{value.country}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>TEAM</h4>
+                                <a class="card-link" data-toggle="collapse" href="#collapseTwoS">
+                                    <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                                </a>
+                            </div>
+                            <div id="collapseTwoS" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    <div>
+                                        <ul class="opac">
+                                            <li>{{equipoC.name}}</li>
+                                            <li>{{equipoC.info}}</li>
+                                            <li>{{equipoC.car}}</li>
+                                        </ul>
+                                        <div class="card-content">
+                                            <img class="trackmap" :src="equipoC.logoCar"></div>
+                                        <ul class="opac">
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="teams" v-show="web == 'teams'">
+            <header class="header-all">
+                <h1>TEAMS</h1>
+            </header>
+            <a class="btnBack" href="#main" v-on:click="showPage('main')">Back</a>
+            <div>
+                <div class="logoTeams">
+                    <div class="logo" v-for="value in teamsC">
+                        <a href="#team"> <img v-on:click="showTeam(value) ; showPage('team')" class="img-fluid" :src="value.logo"></a></div>
+                </div>
+            </div>
+        </div>
+        <div id="tracks" v-show="web == 'tracks'">
+            <header class="header-all">
+                <h1>TRACKS</h1>
+            </header>
+            <a class="btnBack" href="#main" v-on:click="showPage('main')">Back</a>
+            <div>
+                <div class="logoTracks container-fluid">
+                    <div id="accordion">
+                        <div class="card" v-for="(value,index) in tracksC">
+                            <div class="card-header" id="index">
+                                <h4>{{value.name}}</h4>
+                                <a class="card-link" data-toggle="collapse" :data-target="'#collapse' + index" href="#collapseOn" aria-controls="'collapse' + index">
+                                    <img class="arrow" src="https://image.flaticon.com/icons/png/512/84/84263.png" alt="arrow">
+                                </a>
+                            </div>
+                            <div class="collapse" :id="'collapse'+index" data-parent="#accordion" :aria-labelledby="index">
+                                <div class="card-body">
+                                    <div class="track">
+                                        <img class="trackmap" :src="value.image"></div>
+                                    <ul class="opac">
+                                        <li>{{value.location}}</li>
+                                        <li>{{value.size}}</li>
+                                        <li>{{value.curvas}}</li>
+                                        <li>{{value.record}}</li>
+                                        <li>{{value.fecha}}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chat" v-show="web == 'chat'">
+            <header class="header-all">
+                <h1>CHAT</h1>
+            </header>
+            <a class="btnBack" href="#main" v-on:click="showPage('main')">Back</a>
+            <div class="chat">
+                <div id="posts" class="box table-responsive">
+                    <h4 id=""></h4>
+                    Loading posts...
+                </div>
+
+                <div class="inputs">
+                    <input id="textInput" class="input" type="text" placeholder="Your message...">
+                    <button id="create-post" class="btn btn-info" v-on:click="writeNewPost">Send</button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+        <!---------FOOTER NAVBAR----------->
+        <div class="footer">
             <div class="footer fixed-bottom">
                 <nav class="navbar navbar-expand-md bg-dark navbar-dark">
                     <!-- Brand -->
-                    <a class="navbar-brand" href="index.html">HOME</a>
-
+                    <a class="navbar-brand" href="#main" v-on:click="showPage('main')"><img class="imgHome" src="https://png.pngtree.com/element_origin_min_pic/00/00/07/165789978d8cbf9.jpg" width="40" height="40" alt=""></a>
                     <!-- Toggler/collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
                     <!-- Navbar links -->
-
                     <div class="collapse navbar-collapse" id="collapsibleNavbar">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="teams.html">TEAMS</a>
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsibleNavbar" href="#teams" v-on:click="showPage('teams')">TEAMS</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="dates.html">DATES</a>
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsibleNavbar" href="#dates" v-on:click="showPage('dates')">DATES</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ranking.html">RANKING</a>
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsibleNavbar" href="#ranking" v-on:click="showPage('ranking')">RANKING</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="tracks.html">TRACKS</a>
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsibleNavbar" href="#tracks" v-on:click="showPage('tracks')">TRACKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsibleNavbar" href="#chat" v-on:click="showPage('chat')">CHAT</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
 
-                <div class="chat">
-                    <a class="nav-link" href="#">CHAT</a>
+                <div class="btnright">
+                    <button id="login" class="btn btn-danger" v-on:click="logins" v-show="login">Login!</button>
+
+                    <button id="logout" class="btn btn-danger" v-on:click="logouts" v-show="logout">Logout!</button>
                 </div>
             </div>
         </div>
     </div>
-    <!---------------SCRIPTS--------------->
-
+    <!-------------SCRIPTS------------->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- CHANGE THIS CODE BY YOURS -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB3jgGr4CAaaqhut-xROs6Ujc6Wglibf08",
+            authDomain: "forza-7.firebaseapp.com",
+            databaseURL: "https://forza-7.firebaseio.com",
+            projectId: "forza-7",
+            storageBucket: "forza-7.appspot.com",
+            messagingSenderId: "696683043197"
+        };
+        firebase.initializeApp(config);
+    </script>
     <script src="data.js"></script>
 </body>
 
